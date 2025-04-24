@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <div class="container">
+    <img src="indir.jpg" class="resim">
+  </div>
+  <title>Bilgi Yarışması</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Bilgi Yarışması</h1>
+
+    <div id="login-screen">
+      <p>kullanıcı adınızı giriniz:</p>
+      <input type="text" id="username" placeholder="kullanıcı adınız" />
+      <button id="start-btn">Başla</button>
+    </div>
+
+    <div id="quiz-box" class="hidden">
+      <div class="info-bar">
+        <span id="user-display"></span>
+        <span id="timer">Süre: 15</span>
+      </div>
+
+      <div id="question-container">
+        <div id="question">Soru gelecek</div>
+        <img src="" id="indir.jpg" class="resim">
+      </div>
+
+      <div id="options"></div>
+      <button id="next-btn">Sonraki</button>
+      
+      <img src="Turk-Bayragi.jpg" class="question-img" />
+        </div>
+
+    <div id="result" class="hidden"></div>
+
+    <div id="leaderboard" class="hidden">
+      <h2>🧠 Puan Tablosu</h2>
+      <ul id="score-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

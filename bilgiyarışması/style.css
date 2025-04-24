@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 250px; /* isteğe göre arttırılabilir */
+}
+
+.resim-kutu {
+  text-align: center;
+}
+
+.resim {
+  width: 400px;
+  margin-top: 20px;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 30px;
+}
+
+  
+  input {
+    padding: 10px;
+    width: 60%;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #question {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .option {
+    background-color: #ddd;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .option:hover {
+    background-color: #ccc;
+  }
+  
+  .option span.label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .correct {
+    background-color: lightgreen !important;
+  }
+  .incorrect {
+    background-color: salmon !important;
+  }
+
+  .question-img {
+    width: 300px;
+    margin: 20px auto 0 auto;
+  transform: translateX(50px);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .info-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  #score-list {
+    list-style: none;
+    padding: 0;
+  }
+  
