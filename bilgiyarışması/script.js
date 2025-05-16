@@ -3,61 +3,61 @@ const questions = [
     question: "Türkiye'nin başkenti neresidir?",
     options: ["İstanbul", "Ankara", "İzmir", "Bursa"],
     answer: "B",
-    image: "Turk-Bayragi.jpg"
+    image: "fotoğraflar/Turk-Bayragi.jpg"
   },
   {
     question: "En büyük gezegen hangisidir?",
     options: ["Dünya", "Mars", "Jüpiter", "Venüs"],
     answer: "C",
-    image: "gezegen.jpeg"
+    image: "fotoğraflar/gezegen.jpeg"
   },
   {
     question: "HTML açılımı nedir?",
     options: ["HyperText Machine Language", "HyperText Markup Language", "HighText Markup Language", "None"],
     answer: "B",
-    image: "html.jpeg"
+    image: "fotoğraflar/html.jpeg"
   },
   {
     question: "Türkiye'nin en uzun nehri?",
     options: ["Kızılırmak", "Fırat", "Dicle", "Sakarya"],
     answer: "A",
-    image: "6.jpeg"
+    image: "fotoğraflar/6.jpeg"
   },
   {
     question: "Atatürk hangi yılda doğmuştur?",
     options: ["1881", "1876", "1890", "1901"],
     answer: "A",
-    image: "atatürk.jpeg"
+    image: "fotoğraflar/atatürk.jpeg"
   },
   {
     question: "1 GB kaç MB'dir?",
     options: ["512", "1000", "1024", "2048"],
     answer: "C",
-    image: "network.jpeg"
+    image: "fotoğraflar/network.jpeg"
   },
   {
     question: "Python nedir?",
     options: ["Yılan", "Yazılım dili", "Tarayıcı", "Oyun motoru"],
     answer: "B",
-    image: "pth.jpeg"
+    image: "fotoğraflar/pth.jpeg"
   },
   {
     question: "En küçük asal sayı?",
     options: ["0", "1", "2", "3"],
     answer: "C",
-    image: "math.jpeg"
+    image: "fotoğraflar/math.jpeg"
   },
   {
     question: "Javascript hangi alanda kullanılır?",
     options: ["Donanım", "Web", "Veri tabanı", "Ağ"],
     answer: "B",
-    image: "js.jpeg"
+    image: "fotoğraflar/js.jpeg"
   },
   {
     question: "Ay'a ilk çıkan insan?",
     options: ["Yuri Gagarin", "Neil Armstrong", "Buzz Aldrin", "Shepard"],
     answer: "B",
-    image: "ay.jpeg"
+    image: "fotoğraflar/ay.jpeg"
   }
 ];
 
