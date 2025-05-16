@@ -13,8 +13,10 @@
     <div id="login-screen">
       <p>Kullanıcı Adınızı giriniz:</p>
       <input type="text" id="username" placeholder="Kullanıcı Adınız" />
-      <img src="indir.jpg">
+      <img src="fotoğraflar/indir.jpg">
       <button id="start-btn">Başla</button>
+
+      <button id="intro-btn">Hakkımızda</button>
 
     </div>
 
@@ -29,6 +31,15 @@
 </div>
       <div id="options"></div>
       <button id="next-btn">Sonraki</button>
+      <button id="exit-btn" style="background-color: red; color: white; margin-top: 10px;">Yarışmadan Çık</button>
+      <script>
+      document.getElementById("exit-btn").addEventListener("click", function() {
+  if (confirm("Yarışmadan çıkmak istediğinize emin misiniz?")) {
+    window.location.href = "index.html";
+  }
+});
+</script>
+
       </div>
 
     <div id="result" class="hidden"></div>
@@ -38,6 +49,12 @@
       <ul id="score-list"></ul>
     </div>
   </div>
+  <script>
+  document.getElementById("intro-btn").addEventListener("click", function () {
+    window.open("tanitim.html", "_blank"); // "tanitim.html" dosyasını açar
+  });
+</script>
+
 
   <script src="script.js"></script>
 </body>
