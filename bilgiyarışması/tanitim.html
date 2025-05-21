@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tanıtım Sayfası</title>
-  <style>
+<!-- Karakter seti UTF-8 olarak ayarlandı -->
+<meta charset="UTF-8" />
+<!-- Sayfanın mobil cihazlarla uyumlu olması için viewport ayarı -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ 
+  <!-- Tarayıcı sekmesinde görünecek başlık -->
+<title>Tanıtım Sayfası</title>
+ 
+  <!-- Sayfa içi CSS stilleri -->
+<style>
+    /* Sayfa genel stil ayarları */
     body {
       font-family: Arial, sans-serif;
       background-color: #f0f8ff;
@@ -12,6 +19,8 @@
       padding: 40px;
       line-height: 1.6;
     }
+ 
+    /* İçeriği sınırlı genişlikte ortalanmış kutu */
     .container {
       max-width: 700px;
       margin: auto;
@@ -20,12 +29,18 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+ 
+    /* Başlık (h1) rengi */
     h1 {
       color: #2c3e50;
     }
+ 
+    /* Listeye üst boşluk */
     ul {
       margin-top: 10px;
     }
+ 
+    /* Bağlantı (buton gibi görünüyor) stil ayarları */
     a {
       display: inline-block;
       margin-top: 20px;
@@ -35,24 +50,38 @@
       padding: 10px 20px;
       border-radius: 5px;
     }
+ 
+    /* Bağlantı üzerine gelindiğinde arka plan renginin değişmesi */
     a:hover {
       background-color: #2980b9;
     }
-  </style>
+</style>
 </head>
 <body>
-  <div class="container">
-    <h1>Bilgi Yarışmamıza Hoşgeldiniz</h1>
-    <p>Bu bilgi yarışması oyunu sayesinde hem eğlenecek hem de bilgini test edeceksin!</p>
-    <h2>Kurallar:</h2>
-    <ul>
-      <li>10 farklı soru</li>
-      <li>Her soruya 15 saniye süre</li>
-      <li>Her soru 1 puandır.</li>
-      <li>Puan tablosu verilerine göre birinci belirlenir.</li>
-    </ul>
-    <p>Yarışmaya başlamak için ana sayfaya dön!</p>
-    <a href="index.html">Ana Sayfaya Dön</a>
-  </div>
+<!-- İçerik kutusu -->
+<div class="container">
+<!-- Sayfa başlığı -->
+<h1>Bilgi Yarışmamıza Hoşgeldiniz</h1>
+ 
+    <!-- Tanıtım metni -->
+<p>Bu bilgi yarışması oyunu sayesinde hem eğlenecek hem de bilgini test edeceksin!</p>
+ 
+    <!-- Kurallar başlığı -->
+<h2>Kurallar:</h2>
+ 
+    <!-- Kurallar listesi -->
+<ul>
+<li>10 farklı soru</li>
+<li>Her soruya 15 saniye süre</li>
+<li>Her soru 1 puandır.</li>
+<li>Puan tablosu verilerine göre birinci belirlenir.</li>
+</ul>
+ 
+    <!-- Yönlendirme metni -->
+<p>Yarışmaya başlamak için ana sayfaya dön!</p>
+ 
+    <!-- Ana sayfaya yönlendiren bağlantı -->
+<a href="index.html">Ana Sayfaya Dön</a>
+</div>
 </body>
 </html>

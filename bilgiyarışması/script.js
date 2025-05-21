@@ -1,3 +1,4 @@
+// Soru verileri
 const questions = [
   {
     question: "Türkiye'nin başkenti neresidir?",
@@ -62,15 +63,15 @@ const questions = [
 ];
 
 
-let currentQuestion = 0;
-let score = 0;
+let currentQuestion = 0;  // Şu anki soru indeksini tutar
+let score = 0;  // Puan
 let timer;
-let timeLeft = 15;
-let userName = "";
+let timeLeft = 15;  // Zaman
+let userName = "";   //Kullanıcı adı
 
-const letterMap = ["A", "B", "C", "D"];
+const letterMap = ["A", "B", "C", "D"];  // Şıkların yerini tutar
 
-
+// Soruları başlatır
 const loginScreen = document.getElementById("login-screen");
 const startBtn = document.getElementById("start-btn");
 const usernameInput = document.getElementById("username");
@@ -86,6 +87,7 @@ const resultEl = document.getElementById("result");
 const leaderboard = document.getElementById("leaderboard");
 const scoreList = document.getElementById("score-list");
 
+// Kullanıcı adı ve butonu
 startBtn.addEventListener("click", () => {
   const val = usernameInput.value.trim();
   if (val) {
@@ -100,6 +102,7 @@ startBtn.addEventListener("click", () => {
   }
 });
 
+// Soruları yükleme ve fotoğraflar
 function loadQuestion() {
   const q = questions[currentQuestion];
   questionEl.textContent = q.question;
@@ -120,7 +123,7 @@ function loadQuestion() {
   timerEl.textContent = `Süre: ${timeLeft}`;
 }
 
-
+// Seçenekleri işaretleme, süre ve şıkların butonu
 function selectOption(selectedBtn, selectedLetter, correctLetter) {
   clearInterval(timer);
   const isCorrect = selectedLetter === correctLetter;
@@ -141,6 +144,7 @@ function selectOption(selectedBtn, selectedLetter, correctLetter) {
   nextBtn.classList.remove("hidden");
 }
 
+// Butonları gösterir
 nextBtn.addEventListener("click", () => {
   currentQuestion++;
   if (currentQuestion < questions.length) {
@@ -151,6 +155,7 @@ nextBtn.addEventListener("click", () => {
   }
 });
 
+// Yarışmayı başlatır
 function startTimer() {
   clearInterval(timer);
   timer = setInterval(() => {
@@ -163,6 +168,7 @@ function startTimer() {
   }, 1000);
 }
 
+// Yarışmayı bitirir
 function finishQuiz() {
   quizBox.classList.add("hidden");
   resultEl.classList.remove("hidden");
@@ -174,6 +180,7 @@ function finishQuiz() {
   showLeaderboard();
 }
 
+// Skorları kaydeder
 function saveScore(name, point) {
   const scores = JSON.parse(localStorage.getItem("scores") || "[]");
   scores.push({ name, point });
@@ -182,6 +189,7 @@ function saveScore(name, point) {
   localStorage.setItem("scores", JSON.stringify(scores));
 }
 
+// Puan listesi
 function showLeaderboard() {
   const scores = JSON.parse(localStorage.getItem("scores") || "[]");
   const scoreList = document.getElementById("score-list");
@@ -189,7 +197,7 @@ function showLeaderboard() {
  
   scoreList.innerHTML = "";
 
-
+// Puanları işler
   scores.forEach((item, index) => {
     const li = document.createElement("li");
     li.textContent = `${index + 1}. ${item.name} - ${item.point} puan`;
@@ -197,5 +205,7 @@ function showLeaderboard() {
   });
 
   
+
+  // Skor tablosunu gösterir.
   document.getElementById("leaderboard").classList.remove("hidden");
 }

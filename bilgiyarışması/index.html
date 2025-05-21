@@ -4,58 +4,79 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bilgi Yarışması</title>
+
+  <!-- CSS stil dosyasını sayfaya dahil ediyoruz -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
     <h1>Bilgi Yarışması</h1>
 
+    <!-- Giriş ekranı (kullanıcı adı girişi ve butonlar) -->
     <div id="login-screen">
       <p>Kullanıcı Adınızı giriniz:</p>
       <input type="text" id="username" placeholder="Kullanıcı Adınız" />
       <img src="fotoğraflar/indir.jpg">
+
+      <!-- Yarışmayı başlatan buton -->
       <button id="start-btn">Başla</button>
 
+      <!-- Tanıtım sayfasını açan buton -->
       <button id="intro-btn">Hakkımızda</button>
-
     </div>
 
+    <!-- Yarışma ekranı -->
     <div id="quiz-box" class="hidden">
+      
+      <!-- Üst bilgi çubuğu (kullanıcı adı ve süre) -->
       <div class="info-bar">
         <span id="user-display"></span>
         <span id="timer">Süre: 15</span>
       </div>
-      <div id="question-container">
-  <div id="question">Soru gelecek</div>
-  <img id="question-image" src="" alt="Soru Resmi" class="resim" />
-</div>
-      <div id="options"></div>
-      <button id="next-btn">Sonraki</button>
-      <button id="exit-btn" style="background-color: red; color: white; margin-top: 10px;">Yarışmadan Çık</button>
-      <script>
-      document.getElementById("exit-btn").addEventListener("click", function() {
-  if (confirm("Yarışmadan çıkmak istediğinize emin misiniz?")) {
-    window.location.href = "index.html";
-  }
-});
-</script>
 
+      <!-- Soru ve görselin bulunduğu alan -->
+      <div id="question-container">
+        <div id="question">Soru gelecek</div>
+        <img id="question-image" src="" alt="Soru Resmi" class="resim" />
       </div>
 
+      <!-- Şıkların (seçeneklerin) gösterileceği alan -->
+      <div id="options"></div>
+
+      <!-- Sonraki soruya geçiş butonu -->
+      <button id="next-btn">Sonraki</button>
+
+      <!-- Yarışmadan çıkış butonu -->
+      <button id="exit-btn" style="background-color: red; color: white; margin-top: 10px;">Yarışmadan Çık</button>
+
+      <!-- Yarışmadan çıkmak için onay isteyen JavaScript -->
+      <script>
+        document.getElementById("exit-btn").addEventListener("click", function() {
+          if (confirm("Yarışmadan çıkmak istediğinize emin misiniz?")) {
+            window.location.href = "index.html";
+          }
+        });
+      </script>
+    </div>
+
+    <!-- Sonuç ekranı -->
     <div id="result" class="hidden"></div>
 
+    <!-- Puan tablosu -->
     <div id="leaderboard" class="hidden">
       <h2>🧠 Puan Tablosu</h2>
       <ul id="score-list"></ul>
     </div>
   </div>
+
+  <!-- Tanıtım sayfasını yeni sekmede açan JavaScript -->
   <script>
-  document.getElementById("intro-btn").addEventListener("click", function () {
-    window.open("tanitim.html", "_blank"); // "tanitim.html" dosyasını açar
-  });
-</script>
+    document.getElementById("intro-btn").addEventListener("click", function () {
+      window.open("tanitim.html", "_blank"); // "tanitim.html" dosyasını açar
+    });
+  </script>
 
-
+  <!-- JavaScript fonksiyonlarının bulunduğu dış dosya -->
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+/* Gövde ayarları */
 body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to right, #fceabb, #f8b500);
@@ -7,18 +8,18 @@ body {
   color: #333;
 }
 
-
+/* Başlık stilleri */
 h1 {
   font-size: 2.5rem;
   margin-top: 30px;
 }
 
-
+/* Gizli elementler için */
 .hidden {
   display: none;
 }
 
-
+/* Giriş, yarışmayı başlatma ve skor tablosunun stilleri */
 #login-screen,
 #quiz-box,
 #result,
@@ -43,7 +44,7 @@ input, select {
   box-sizing: border-box;
 }
 
-
+/* Buton ayarları */
 button {
   background-color: #f8b500;
   color: white;
@@ -61,7 +62,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-
+/* Oyuncu adı ve süre */
 .info-bar {
   display: flex;
   justify-content: space-between;
@@ -74,14 +75,14 @@ button:hover {
   margin-bottom: 15px;
 }
 
-
+/* Sorular */
 #question {
   font-size: 1.5rem;
   font-weight: 600;
   margin: 20px 0;
 }
 
-
+/* Şıkların butonları */
 #options button {
   display: block;
   width: 100%;
@@ -95,12 +96,14 @@ button:hover {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+
+/* Buton pasif olunca görünen */
 #options button:hover {
   background-color: #ffec99;
   transform: scale(1.03);
 }
 
-
+/* Resimlerin ayarları */
 #question-image {
   width: 100%;              
   max-height: 250px;        
@@ -118,8 +121,8 @@ button:hover {
   color: #444;
   margin-top: 20px;
 }
-s
 
+/* Puan tabloları */
 #leaderboard {
   background-color: #fffbe6;
 }
@@ -143,7 +146,7 @@ s
   font-weight: 500;
   transition: background-color 0.2s;
 }
-
+ 
 #score-list li:hover {
   background: #ffdda0;
 }
