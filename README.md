@@ -11,3 +11,4 @@ Bu proje, kullanıcıların rastgele sorularla bilgi düzeyini test edebileceği
 - 🏆 Puan tablosu (leaderboard)
 - 📄 Hakkımızda sayfası (`tanitim.html`)
 - 🔴 Yarışmadan çıkış butonu
+![image](https://github.com/user-attachments/assets/71a1aa84-f0ae-4f09-8093-f7c230f7ab85)
